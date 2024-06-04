@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #191919; /* Daha koyu arka plan rengi */
+    color: #fff; /* Metin rengi */
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+    background: #111; /* Daha koyu arka plan rengi */
+    color: #fff;
+    padding: 10px 0;
+}
+
+.logo-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s; /* Daha keskin geçiş efekti */
+}
+
+nav ul li a:hover {
+    color: #50b3a2; /* Daha parlak renk */
+}
+
+main {
+    padding: 20px 0;
+}
+
+.intro, .features, .information {
+    margin-bottom: 20px;
+}
+
+.intro h2, .features h2, .information h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #50b3a2;
+}
+
+.intro p{
+    text-align: center;
+}
+
+.information {
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background: #333; /* Daha koyu arka plan rengi */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 calc(33% - 20px);
+    margin: 10px;
+}
+
+.feature img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.feature h3 {
+    margin-top: 10px;
+    color: #50b3a2;
+}
+
+footer {
+    background: #111; /* Daha koyu arka plan rengi */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}

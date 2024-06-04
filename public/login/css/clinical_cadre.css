@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #191919;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #111;
+    color: #fff;
+    padding: 20px 0; /* Paddingi artırarak daha geniş bir header yap */
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Maksimum genişliği belirle */
+    margin: 0 auto; /* Merkezde hizala */
+}
+
+.header .logo {
+    max-width: 100px;
+}
+
+.header .menu {
+    list-style: none;
+    padding: 0;
+}
+
+.header .menu li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.header .menu li:first-child {
+    margin-left: 0;
+}
+
+.header .menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header .menu li a:hover {
+    color: #50b3a2;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  .modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%; /* Maksimum genişlik azaltıldı */
+    max-height: 80%; /* Maksimum yükseklik azaltıldı */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+footer {
+    background: #111; /* Daha koyu arka plan rengi */
+    color: #fff;
+    text-align: center;
+
+    margin-bottom: 100px;
+}
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
