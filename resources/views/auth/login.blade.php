@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FitNJoy - Giriş Yap</title>
-    <link rel="stylesheet" href="{{ asset('login/css/login.css') }}">
+    <link rel="stylesheet" href="{{ asset('auth/css/login.css') }}">
 </head>
 <body>
 <header>
     <div class="container">
-        <img src="{{ asset('login/img/FitNJoy_logo.png') }}" alt="FitNJoy Logo" class="logo">
+        <img src="{{ asset('auth/img/FitNJoy_logo.png') }}" alt="FitNJoy Logo" class="logo">
     </div>
 </header>
 <main>

@@ -74,6 +74,8 @@
                     <a class="collapse-item" href="{{route("adminPanel.users.index")}}">Kullanıcılar</a>
                     <a class="collapse-item" href="{{route("recipes.index")}}">Tarifler</a>
                     <a class="collapse-item" href="{{route("besins.index")}}">Besinler</a>
+                    {{--<a class="collapse-item" href="{{route("/")}}">Çıkış Yap!</a>--}}
+
                 </div>
             </div>
         </li>
@@ -305,7 +307,7 @@
                                 Activity Log
                             </a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                            <a class="dropdown-item" href="{{route("logoutP")}}" data-toggle="modal" data-target="#logoutModal">
                                 <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                 Logout
                             </a>
@@ -364,7 +366,7 @@
             <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
             <div class="modal-footer">
                 <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                <a class="btn btn-primary" href="login.html">Logout</a>
+                <a class="btn btn-primary" href="{{route("logoutP")}}">Logout</a>
             </div>
         </div>
     </div>

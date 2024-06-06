@@ -4,30 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FitNJoy - Anasayfa</title>
-    <link rel="stylesheet" href="{{asset("login/css/homepage.css")}}">
+    <link rel="stylesheet" href="{{asset('auth/css/homepage.css')}}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-
 </head>
 <body>
 <header>
     <div class="container">
         <div class="logo-nav">
-            <img src="{{asset("login/img/FitNJoy_logo.png")}}" alt="FitNJoy Logo" class="logo">
+            <a href="{{route('userPanel.home')}}">
+                <img src="{{asset('auth/img/FitNJoy_logo.png')}}" alt="FitNJoy Logo" class="logo">
+            </a>
             <nav>
                 <ul>
-                    <li><a href="{{route("userPanel.home")}}">Ana Sayfa</a></li>
-                    <li><a href="{{route("userPanel.klinikKadro")}}">Personellerimiz</a></li>
-                    <li><a href="{{route("userPanel.besins")}}">Besin Değerleri</a></li>
-                    <li><a href="{{route("userPanel.recipes")}}">Diyet Tarifler</a></li>
-                    <li><a href="{{route("login")}}">Giriş Yap</a></li>
+                    <li><a href="{{route('userPanel.home')}}">Ana Sayfa</a></li>
+                    <li><a href="{{route('userPanel.klinikKadro')}}">Personellerimiz</a></li>
+                    <li><a href="{{route('userPanel.besins')}}">Besin Değerleri</a></li>
+                    <li><a href="{{route('userPanel.recipes')}}">Sağlıklı Yemek Tarifleri</a></li>
+                    <li><a href="{{route('login')}}">Çıkış Yap</a></li>
                 </ul>
             </nav>
         </div>
     </div>
 </header>
 <main>
-   @yield("content")
+    @yield('content')
 </main>
 <footer>
     <div class="container">

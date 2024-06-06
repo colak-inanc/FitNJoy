@@ -15,12 +15,12 @@
 
         <table class="table table-bordered">
             <tr>
-                <th>Besin Adı</th>
+                <th>Besin Adı (100g)</th>
                 <th>Lif oranı(g)</th>
                 <th>Protein</th>
                 <th>Karbonhidrat</th>
                 <th>Yağ</th>
-                <th>Kalori</th>
+                <th>Kalori (kcal)</th>
                 <th width="280px">İşlemler</th>
             </tr>
             @foreach ($besins as $besin)

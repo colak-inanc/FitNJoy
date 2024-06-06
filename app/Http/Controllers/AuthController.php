@@ -50,5 +50,9 @@ class AuthController extends Controller
         }
     }
 
+    public function logoutP(){
+        Auth::logout();
+        return redirect()->route("login")->withErrors("Oturum kapatıldı.");
+    }
 
 }

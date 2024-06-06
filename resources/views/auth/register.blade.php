@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FitNJoy - Üye Kayıt</title>
-    <link rel="stylesheet" href="{{asset("login/css/member_registration.css")}}">
+    <link rel="stylesheet" href="{{asset("auth/css/member_registration.css")}}">
 </head>
 <body>
 <div class="container">

@@ -9,10 +9,11 @@ use App\Http\Controllers\UyeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BesinController;
 
-Route::get('/login', [AuthController::class, 'login'])->name('login');
+Route::get('/', [AuthController::class, 'login'])->name('login');
 Route::get('register', [AuthController::class, 'register'])->name('register');
 Route::post('registerP', [AuthController::class, 'registerP'])->name('registerP');
 Route::post('/login1', [AuthController::class, 'loginP'])->name('loginP');
+Route::get("logout",[AuthController::class,"logoutP"])->name("logoutP");
 
 
 Route::get("/admin",[adminController::class,"index"])->name('adminPanel.home');

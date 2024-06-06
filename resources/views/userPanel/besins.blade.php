@@ -3,7 +3,7 @@
 @section('content')
     <div class="container mt-4">
         <div class="d-flex justify-content-between align-items-center mb-4">
-            <h2>Besin Değerleri</h2>
+           {{-- <h2>Besin Değerleri</h2> --}}
 
         </div>
 
@@ -17,12 +17,12 @@
             <table class="table table-striped table-hover" >
                 <thead class="thead-dark">
                 <tr>
-                    <th scope="col">Besin Adı</th>
+                    <th scope="col">Besin Adı (100g)</th>
                     <th scope="col">Lif (g)</th>
-                    <th scope="col">Protein(g)</th>
-                    <th scope="col">Karbonhidrat(g)</th>
-                    <th scope="col">Yağ(g)</th>
-                    <th scope="col">Kalori</th>
+                    <th scope="col">Protein (g)</th>
+                    <th scope="col">Karbonhidrat (g)</th>
+                    <th scope="col">Yağ (g)</th>
+                    <th scope="col">Kalori (kcal)</th>
 
                 </tr>
                 </thead>
